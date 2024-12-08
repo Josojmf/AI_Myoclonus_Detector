@@ -58,6 +58,7 @@ def connect_to_mongo():
         users_collection = db["Users"]
         print("Connected to MongoDB successfully.")
         print(users_collection)
+        
 
         # Test the connection by running a simple command
         client.admin.command('ping')
@@ -280,109 +281,151 @@ def detect_noise():
         # Normalize the signal data
         signal_data = data['Original Signal'].values
         scaler = MinMaxScaler()
-        normalized_signal = scaler.fit_transform(signal_data.reshape(-1, 1)).flatten()
+        normalized_signal = scaler.fit_transform(
+            signal_data.reshape(-1, 1)).flatten()
 
-        # Predict noise using the loaded model
+        # Predict noise
         predictions = model.predict(normalized_signal.reshape(-1, 1))
         classifications = (predictions > 0.5).astype(int).flatten()
 
-        # Calculate the number of spastic signals
-        num_spastic_signals = np.sum(classifications == 0)  # Spastic signals are classified as `0`
-
-        # Identify absolute maxima and minima for extrema visualization
+        # Identify absolute maxima and minima
         peaks, _ = find_peaks(normalized_signal)
         troughs, _ = find_peaks(-normalized_signal)
+
+        # Filter for absolute maxima (> 0.65) and absolute minima (< 0.2)
         abs_maxima_indices = [i for i in peaks if normalized_signal[i] > 0.65]
         abs_minima_indices = [i for i in troughs if normalized_signal[i] < 0.2]
+
+        # Combine absolute extrema
         abs_extrema_indices = sorted(abs_maxima_indices + abs_minima_indices)
         abs_extrema_values = normalized_signal[abs_extrema_indices]
 
-        # Generate diagrams
+        # Generate the first diagram (signal plot without classifications)
+        try:
+            signal_plot = io.BytesIO()
+            plt.figure(figsize=(8, 4))
+            plt.plot(data.index, normalized_signal,
+                     label='Normalized Signal', color='blue')
+            plt.title('Normalized Signal Plot')
+            plt.xlabel('Index')
+            plt.ylabel('Normalized Signal Value')
+            plt.legend()
+            plt.grid(True)
+            plt.savefig(signal_plot, format='png')
+            plt.close()
+            signal_plot.seek(0)
+            signal_plot_url = base64.b64encode(
+                signal_plot.getvalue()).decode('utf8')
+        except Exception as e:
+            logging.error(f"Error generating signal plot: {e}", exc_info=True)
+            flash('Error generating signal plot. Please try again later.', 'error')
+            return redirect(url_for('main.index'))
 
-        # 1. Signal Plot
-        signal_plot = io.BytesIO()
-        plt.figure(figsize=(8, 4))
-        plt.plot(data.index, normalized_signal, label='Normalized Signal', color='blue')
-        plt.title('Normalized Signal Plot')
-        plt.xlabel('Index')
-        plt.ylabel('Normalized Signal Value')
-        plt.legend()
-        plt.grid(True)
-        plt.savefig(signal_plot, format='png')
-        plt.close()
-        signal_plot.seek(0)
-        signal_plot_url = base64.b64encode(signal_plot.getvalue()).decode('utf8')
+        # Generate the second diagram (summary plot)
+        try:
+            summary = {
+                "Not Spastic": int(classifications.sum()),
+                "Spastic": int(len(classifications) - classifications.sum())
+            }
+            summary_plot = io.BytesIO()
+            labels = list(summary.keys())
+            values = list(summary.values())
+            plt.figure(figsize=(6, 4))
+            plt.bar(labels, values, color=['green', 'orange'])
+            plt.title('Summary of Signal Classification')
+            plt.xlabel('Classification')
+            plt.ylabel('Count')
+            plt.savefig(summary_plot, format='png')
+            plt.close()
+            summary_plot.seek(0)
+            summary_plot_url = base64.b64encode(
+                summary_plot.getvalue()).decode('utf8')
+        except Exception as e:
+            logging.error(f"Error generating summary plot: {e}", exc_info=True)
+            flash('Error generating summary plot. Please try again later.', 'error')
+            return redirect(url_for('main.index'))
 
-        # 2. Summary Plot
-        summary = {
-            "Not Spastic": int(classifications.sum()),
-            "Spastic": int(len(classifications) - classifications.sum())
-        }
-        summary_plot = io.BytesIO()
-        labels = list(summary.keys())
-        values = list(summary.values())
-        plt.figure(figsize=(6, 4))
-        plt.bar(labels, values, color=['green', 'orange'])
-        plt.title('Summary of Signal Classification')
-        plt.xlabel('Classification')
-        plt.ylabel('Count')
-        plt.savefig(summary_plot, format='png')
-        plt.close()
-        summary_plot.seek(0)
-        summary_plot_url = base64.b64encode(summary_plot.getvalue()).decode('utf8')
+        # Generate the third diagram (connected absolute extrema)
+        try:
+            peak_connection_plot = io.BytesIO()
+            plt.figure(figsize=(10, 5))
+            plt.plot(data.index[abs_extrema_indices], abs_extrema_values, marker='o',
+                     linestyle='-', color='purple', label='Absolute Extrema Connected')
+            plt.title('Connected Absolute Maxima and Minima')
+            plt.xlabel('Index')
+            plt.ylabel('Normalized Signal Value')
+            plt.legend()
+            plt.grid(True)
+            plt.tight_layout()
+            plt.savefig(peak_connection_plot, format='png')
+            plt.close()
+            peak_connection_plot.seek(0)
+            peak_connection_plot_url = base64.b64encode(
+                peak_connection_plot.getvalue()).decode('utf8')
+        except Exception as e:
+            logging.error(
+                f"Error generating peak connection plot: {e}", exc_info=True)
+            flash(
+                'Error generating peak connection plot. Please try again later.', 'error')
+            return redirect(url_for('main.index'))
 
-        # 3. Peak Connection Plot
-        peak_connection_plot = io.BytesIO()
-        plt.figure(figsize=(10, 5))
-        plt.plot(data.index[abs_extrema_indices], abs_extrema_values, marker='o',
-                 linestyle='-', color='purple', label='Absolute Extrema Connected')
-        plt.title('Connected Absolute Maxima and Minima')
-        plt.xlabel('Index')
-        plt.ylabel('Normalized Signal Value')
-        plt.legend()
-        plt.grid(True)
-        plt.tight_layout()
-        plt.savefig(peak_connection_plot, format='png')
-        plt.close()
-        peak_connection_plot.seek(0)
-        peak_connection_plot_url = base64.b64encode(peak_connection_plot.getvalue()).decode('utf8')
+        # Generate the fourth diagram (highlighting spastic and non-spastic regions)
+        try:
+            spastic_plot = io.BytesIO()
+            plt.figure(figsize=(10, 5))
+            plt.plot(data.index, normalized_signal,
+                     color='black', label='Normalized Signal')
 
-        # 4. Spastic Regions Plot
-        spastic_plot = io.BytesIO()
-        plt.figure(figsize=(10, 5))
-        plt.plot(data.index, normalized_signal, color='black', label='Normalized Signal')
-        spastic_indices = np.where(classifications == 0)[0]
-        non_spastic_indices = np.where(classifications == 1)[0]
+            # Highlight spastic and non-spastic regions
+            spastic_min, spastic_max = 0.3, 0.7
+            spastic_indices = np.where(classifications == 0)[0]
+            non_spastic_indices = np.where(classifications == 1)[0]
 
-        # Highlight spastic and non-spastic regions
-        if len(spastic_indices) > 0:
-            plt.scatter(spastic_indices, normalized_signal[spastic_indices],
-                        color='red', label='Spastic Regions')
-        if len(non_spastic_indices) > 0:
-            plt.scatter(non_spastic_indices, normalized_signal[non_spastic_indices],
-                        color='green', label='Non-Spastic Regions')
+            if len(spastic_indices) > 0:
+                start = spastic_indices[0]
+                for i in range(1, len(spastic_indices)):
+                    if spastic_indices[i] != spastic_indices[i - 1] + 1:
+                        plt.axvspan(start, spastic_indices[i - 1], ymin=spastic_min, ymax=spastic_max,
+                                    color='red', alpha=0.3, label='Spastic Region' if i == 1 else "")
+                        start = spastic_indices[i]
+                plt.axvspan(start, spastic_indices[-1], ymin=spastic_min, ymax=spastic_max,
+                            color='red', alpha=0.3, label='Spastic Region')
+             # Highlight non-spastic regions (green, spanning entire plot height)
+            if len(non_spastic_indices) > 0:
+                start = non_spastic_indices[1]
+                for i in range(1, len(non_spastic_indices)):
+                    if non_spastic_indices[i] != non_spastic_indices[i - 1] + 1:
+                        plt.axvspan(start, non_spastic_indices[i - 1], ymin=spastic_min, ymax=spastic_max,
+                                    color='green', alpha=0.2, label='Non-Spastic Region' if i == 1 else "")
+                        start = non_spastic_indices[i]
+                plt.axvspan(start, non_spastic_indices[-1],color='green', alpha=0.2, label='Non-Spastic Region')
 
-        plt.title('Spastic and Non-Spastic Regions Highlighted')
-        plt.xlabel('Index')
-        plt.ylabel('Normalized Signal Value')
-        plt.legend()
-        plt.grid(True)
-        plt.tight_layout()
-        plt.savefig(spastic_plot, format='png')
-        plt.close()
-        spastic_plot.seek(0)
-        spastic_plot_url = base64.b64encode(spastic_plot.getvalue()).decode('utf8')
+            plt.title('Spastic and Non-Spastic Regions Highlighted')
+            plt.xlabel('Index')
+            plt.ylabel('Normalized Signal Value')
+            plt.legend()
+            plt.grid(True)
+            plt.tight_layout()
+            plt.savefig(spastic_plot, format='png')
+            plt.close()
+            spastic_plot.seek(0)
+            spastic_plot_url = base64.b64encode(
+                spastic_plot.getvalue()).decode('utf8')
+        except Exception as e:
+            logging.error(
+                f"Error generating spastic regions plot: {e}", exc_info=True)
+            flash(
+                'Error generating spastic regions plot. Please try again later.', 'error')
+            return redirect(url_for('main.index'))
 
-        # Render the results page with diagrams and spastic signal count
+        # Render the results page with four diagrams
         return render_template(
             'results.html',
             signal_plot_url=signal_plot_url,
             summary_plot_url=summary_plot_url,
             peak_connection_plot_url=peak_connection_plot_url,
-            spastic_plot_url=spastic_plot_url,
-            num_spastic_signals=num_spastic_signals
+            spastic_plot_url=spastic_plot_url
         )
-
     except Exception as e:
         logging.error(f"Error processing request: {e}", exc_info=True)
         flash('An internal error occurred. Please try again later.', 'error')

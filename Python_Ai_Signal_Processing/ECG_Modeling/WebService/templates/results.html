@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+
+{% block title %}Analysis Results - Signal Noise Detection{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='results_styles.css') }}">
+{% endblock %}
+
+{% block header %}Analysis Results{% endblock %}
+
+{% block content %}
+<div class="results-page">
+    {% if error_message %}
+    <div class="error-message" style="color: red; font-weight: bold; text-align: center; margin-bottom: 20px;">
+        {{ error_message }}
+    </div>
+    {% endif %}
+    <div class="results-container">
+        {% if signal_plot_url and summary_plot_url and peak_connection_plot_url and spastic_plot_url %}
+        <div class="result-item">
+            <h2>Signal Analysis Plot</h2>
+            <img src="data:image/png;base64,{{ signal_plot_url }}" alt="Signal Plot">
+        </div>
+        <div class="result-item">
+            <h2>Summary of Noise Detection</h2>
+            <img src="data:image/png;base64,{{ summary_plot_url }}" alt="Summary Plot">
+        </div>
+        <div class="result-item">
+            <h2>Connected Relative Maxima and Minima</h2>
+            <img src="data:image/png;base64,{{ peak_connection_plot_url }}" alt="Peak Connection Plot">
+        </div>
+        <div class="result-item">
+            <h2>Spastic Regions Highlighted</h2>
+            <img src="data:image/png;base64,{{ spastic_plot_url }}" alt="Spastic Regions Plot">
+        </div>
+
+        <!-- Add the count of detected spastic signals -->
+        <div class="result-item">
+            <h3>Total Spastic Values Detected: {{ num_spastic_signals }}</h3>
+        </div>
+        {% else %}
+        <div class="no-results" style="text-align: center; margin-top: 20px;">
+            <p>No results to display. Please try again with a valid file.</p>
+        </div>
+        {% endif %}
+    </div>
+    <div class="back-link">
+        <a href="/">Go Back</a>
+    </div>
+</div>
+{% endblock %}

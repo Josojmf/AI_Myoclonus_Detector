@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}Log in DEV ENV{% endblock %}
+
+{% block content %}
+<div class="container">
+    <link rel="stylesheet" href="{{ url_for('static', filename='login_styles.css') }}">
+    <div class="form-container">
+        <h1>Login DEV ENV</h1>
+        <form action="/login" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            <button type="submit" class="btn">Login</button>
+        </form>
+        <p>Don't have an account? <a href="/register">Register here</a>.</p>
+    </div>
+</div>
+{% endblock %}

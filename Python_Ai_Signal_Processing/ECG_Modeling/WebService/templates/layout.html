@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Signal Noise Detection Tool DEV ENV{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='common_styles.css') }}">
+    {% block styles %}{% endblock %}
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">×</a>
+        <a href="/">Home</a>
+        {% if not session.get('logged_in') %}
+            <a href="/login">Login</a>
+            <a href="/register">Register</a>
+            <a href="/information">Information</a>
+            {% else %}
+            <a href="/logout">Logout</a>
+            <a href="/information">Information</a>
+        {% endif %}
+    </div>
+
+    <!-- Header -->
+    <div class="header">
+        <button class="openbtn" onclick="openSidebar()">☰</button>
+        <h1>{% block header %}Signal Noise Detection Tool{% endblock %}</h1>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        {% block content %}
+        <!-- Page-specific content will go here -->
+        {% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2024 TFG. Developed by José María Fernández.</p>
+    </footer>
+</body>
+</html>

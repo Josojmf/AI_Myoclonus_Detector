@@ -1,0 +1,106 @@
+/* Header Styles */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #002147;
+    color: white;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 36px; /* Make the title bigger */
+    flex: 1; /* Ensure the title takes the available space */
+    text-align: center; /* Center the title text */
+}
+
+.openbtn {
+    font-size: 24px; /* Adjust size for better visibility */
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 10px;
+    position: absolute; /* Position the button in the top-left corner */
+    left: 10px; /* Align to the left */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.openbtn:hover {
+    background-color: #003366;
+    border-radius: 4px; /* Add a subtle hover effect */
+}
+
+/* Sidebar Styles */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #002147;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #f1f1f1;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #575757;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f7fa;
+}
+
+.footer {
+    background-color: #002147;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.flash-message {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.flash-message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.flash-message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+                                                                                                        

@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}Home - Signal Noise Detection DEV ENV{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='home_styles.css') }}">
+{% endblock %}
+
+{% block header %}Signal Noise Detection DEV ENV{% endblock %}
+
+{% block content %}
+<div class="home-page">
+    <div class="intro">
+        <h2>Welcome to the Signal Noise Detection Tool DEV ENV</h2>
+        <p>
+            This tool allows you to upload signal data in CSV format and perform noise analysis on it.
+            You can also view detailed charts and summaries of the analyzed data. Get started by uploading a file below.
+        </p>
+    </div>
+    <form action="/detect" method="post" enctype="multipart/form-data">
+        <label for="file" class="upload-label">Upload a CSV File:</label>
+        <input type="file" name="file" id="file" accept=".csv" required>
+        <button type="submit" class="submit-btn">Analyze Signal</button>
+    </form>
+</div>
+{% endblock %}

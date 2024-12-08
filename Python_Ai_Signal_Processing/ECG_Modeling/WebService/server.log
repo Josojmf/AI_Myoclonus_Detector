@@ -1,0 +1,338 @@
+2024-12-07 12:35:50,453 INFO: Base Directory: C:\INFORMATICA\TFG\Codigo-DEV-ENV\Python_Ai_Signal_Processing\ECG_Modeling\WebService\app
+2024-12-07 12:35:50,454 INFO: Templates Directory: C:\INFORMATICA\TFG\Codigo-DEV-ENV\Python_Ai_Signal_Processing\ECG_Modeling\WebService\app\../templates
+2024-12-07 12:35:50,455 INFO: Static Directory: C:\INFORMATICA\TFG\Codigo-DEV-ENV\Python_Ai_Signal_Processing\ECG_Modeling\WebService\app\../static
+2024-12-07 12:35:52,615 INFO: Conexión a MongoDB exitosa.
+2024-12-07 12:35:52,616 INFO: Connected to MongoDB successfully.
+2024-12-07 12:35:52,617 INFO: Flask application created and initialized.
+2024-12-07 12:36:02,147 INFO: Closed MongoDB connection.
+2024-12-07 12:36:02,149 INFO: Closed all Matplotlib figures.
+2024-12-07 12:36:02,234 INFO: Closed MongoDB connection.
+2024-12-07 12:36:02,235 INFO: Closed all Matplotlib figures.
+2024-12-07 12:36:02,712 INFO: Closed MongoDB connection.
+2024-12-07 12:36:02,713 INFO: Closed all Matplotlib figures.
+2024-12-07 12:36:02,725 INFO: Closed MongoDB connection.
+2024-12-07 12:36:02,726 INFO: Closed all Matplotlib figures.
+2024-12-07 12:36:02,766 INFO: Closed MongoDB connection.
+2024-12-07 12:36:02,767 INFO: Closed all Matplotlib figures.
+2024-12-07 12:36:02,790 INFO: Closed MongoDB connection.
+2024-12-07 12:36:02,791 INFO: Closed all Matplotlib figures.
+2024-12-07 12:36:03,160 INFO: Closed MongoDB connection.
+2024-12-07 12:36:03,161 INFO: Closed all Matplotlib figures.
+2024-12-07 12:36:03,182 INFO: Closed MongoDB connection.
+2024-12-07 12:36:03,186 INFO: Closed all Matplotlib figures.
+2024-12-07 12:36:07,986 INFO: Closed MongoDB connection.
+2024-12-07 12:36:07,988 INFO: Closed all Matplotlib figures.
+2024-12-07 12:36:08,019 INFO: Closed MongoDB connection.
+2024-12-07 12:36:08,020 INFO: Closed all Matplotlib figures.
+2024-12-07 12:36:08,103 INFO: Closed MongoDB connection.
+2024-12-07 12:36:08,106 INFO: Closed all Matplotlib figures.
+2024-12-07 12:36:08,110 INFO: Closed MongoDB connection.
+2024-12-07 12:36:08,112 INFO: Closed all Matplotlib figures.
+2024-12-07 12:36:08,118 INFO: Closed MongoDB connection.
+2024-12-07 12:36:08,120 INFO: Closed all Matplotlib figures.
+2024-12-07 12:36:08,218 INFO: Closed MongoDB connection.
+2024-12-07 12:36:08,219 INFO: Closed all Matplotlib figures.
+2024-12-07 12:36:08,492 INFO: Closed MongoDB connection.
+2024-12-07 12:36:08,493 INFO: Closed all Matplotlib figures.
+2024-12-07 12:56:16,686 INFO: Base Directory: C:\INFORMATICA\TFG\Codigo-DEV-ENV\Python_Ai_Signal_Processing\ECG_Modeling\WebService\app
+2024-12-07 12:56:16,687 INFO: Templates Directory: C:\INFORMATICA\TFG\Codigo-DEV-ENV\Python_Ai_Signal_Processing\ECG_Modeling\WebService\app\../templates
+2024-12-07 12:56:16,687 INFO: Static Directory: C:\INFORMATICA\TFG\Codigo-DEV-ENV\Python_Ai_Signal_Processing\ECG_Modeling\WebService\app\../static
+2024-12-07 12:56:17,390 INFO: Conexión a MongoDB exitosa.
+2024-12-07 12:56:17,391 INFO: Connected to MongoDB successfully.
+2024-12-07 12:56:17,391 INFO: Flask application created and initialized.
+2024-12-07 12:56:53,205 INFO: Closed MongoDB connection.
+2024-12-07 12:56:53,209 INFO: Closed all Matplotlib figures.
+2024-12-07 12:56:53,247 INFO: Closed MongoDB connection.
+2024-12-07 12:56:53,249 INFO: Closed all Matplotlib figures.
+2024-12-07 12:56:53,605 INFO: Closed MongoDB connection.
+2024-12-07 12:56:53,607 INFO: Closed all Matplotlib figures.
+2024-12-07 12:56:53,657 INFO: Closed MongoDB connection.
+2024-12-07 12:56:53,658 INFO: Closed all Matplotlib figures.
+2024-12-07 12:56:53,662 INFO: Closed MongoDB connection.
+2024-12-07 12:56:53,665 INFO: Closed all Matplotlib figures.
+2024-12-07 12:56:54,017 INFO: Closed MongoDB connection.
+2024-12-07 12:56:54,018 INFO: Closed all Matplotlib figures.
+2024-12-07 12:56:54,455 INFO: Closed MongoDB connection.
+2024-12-07 12:56:54,456 INFO: Closed all Matplotlib figures.
+2024-12-07 12:56:54,722 INFO: Closed MongoDB connection.
+2024-12-07 12:56:54,724 INFO: Closed all Matplotlib figures.
+2024-12-07 12:57:16,692 INFO: Closed MongoDB connection.
+2024-12-07 12:57:16,694 INFO: Closed all Matplotlib figures.
+2024-12-07 12:57:16,961 INFO: Closed MongoDB connection.
+2024-12-07 12:57:16,963 INFO: Closed all Matplotlib figures.
+2024-12-07 12:57:17,373 INFO: Closed MongoDB connection.
+2024-12-07 12:57:17,375 INFO: Closed all Matplotlib figures.
+2024-12-07 12:57:17,379 INFO: Closed MongoDB connection.
+2024-12-07 12:57:17,380 INFO: Closed all Matplotlib figures.
+2024-12-07 12:57:17,381 INFO: Closed MongoDB connection.
+2024-12-07 12:57:17,382 INFO: Closed all Matplotlib figures.
+2024-12-07 12:57:17,398 INFO: Closed MongoDB connection.
+2024-12-07 12:57:17,399 INFO: Closed all Matplotlib figures.
+2024-12-07 12:57:17,622 INFO: Closed MongoDB connection.
+2024-12-07 12:57:17,623 INFO: Closed all Matplotlib figures.
+2024-12-07 13:04:21,075 INFO: Base Directory: C:\INFORMATICA\TFG\Codigo-DEV-ENV\Python_Ai_Signal_Processing\ECG_Modeling\WebService\app
+2024-12-07 13:04:21,075 INFO: Templates Directory: C:\INFORMATICA\TFG\Codigo-DEV-ENV\Python_Ai_Signal_Processing\ECG_Modeling\WebService\app\../templates
+2024-12-07 13:04:21,076 INFO: Static Directory: C:\INFORMATICA\TFG\Codigo-DEV-ENV\Python_Ai_Signal_Processing\ECG_Modeling\WebService\app\../static
+2024-12-07 13:04:21,081 INFO: Flask application created and initialized.
+2024-12-07 13:04:28,840 INFO: Connected to MongoDB successfully.
+2024-12-07 13:04:29,046 INFO: Closed MongoDB connection.
+2024-12-07 13:04:29,048 INFO: Closed all Matplotlib figures.
+2024-12-07 13:04:33,858 INFO: Connected to MongoDB successfully.
+2024-12-07 13:04:33,909 INFO: Closed MongoDB connection.
+2024-12-07 13:04:33,910 INFO: Closed all Matplotlib figures.
+2024-12-07 13:04:34,505 INFO: Connected to MongoDB successfully.
+2024-12-07 13:04:34,577 INFO: Closed MongoDB connection.
+2024-12-07 13:04:34,585 INFO: Closed all Matplotlib figures.
+2024-12-07 13:04:34,878 INFO: Connected to MongoDB successfully.
+2024-12-07 13:04:34,878 INFO: Connected to MongoDB successfully.
+2024-12-07 13:04:34,936 INFO: Closed MongoDB connection.
+2024-12-07 13:04:34,936 INFO: Closed MongoDB connection.
+2024-12-07 13:04:34,937 INFO: Closed all Matplotlib figures.
+2024-12-07 13:04:34,939 INFO: Closed all Matplotlib figures.
+2024-12-07 13:04:35,386 INFO: Connected to MongoDB successfully.
+2024-12-07 13:04:35,425 INFO: Closed MongoDB connection.
+2024-12-07 13:04:35,426 INFO: Closed all Matplotlib figures.
+2024-12-07 13:11:15,936 INFO: Base Directory: C:\INFORMATICA\TFG\Codigo-DEV-ENV\Python_Ai_Signal_Processing\ECG_Modeling\WebService\app
+2024-12-07 13:11:15,937 INFO: Templates Directory: C:\INFORMATICA\TFG\Codigo-DEV-ENV\Python_Ai_Signal_Processing\ECG_Modeling\WebService\app\../templates
+2024-12-07 13:11:15,938 INFO: Static Directory: C:\INFORMATICA\TFG\Codigo-DEV-ENV\Python_Ai_Signal_Processing\ECG_Modeling\WebService\app\../static
+2024-12-07 13:11:15,943 INFO: Flask application created and initialized.
+2024-12-07 13:11:24,228 INFO: Connected to MongoDB successfully.
+2024-12-07 13:11:24,288 INFO: Closed MongoDB connection.
+2024-12-07 13:11:24,291 INFO: Closed all Matplotlib figures.
+2024-12-07 13:11:24,885 INFO: Connected to MongoDB successfully.
+2024-12-07 13:11:24,887 INFO: Connected to MongoDB successfully.
+2024-12-07 13:11:25,146 INFO: Connected to MongoDB successfully.
+2024-12-07 13:11:25,198 INFO: Closed MongoDB connection.
+2024-12-07 13:11:25,199 INFO: Closed all Matplotlib figures.
+2024-12-07 13:11:25,219 INFO: Closed MongoDB connection.
+2024-12-07 13:11:25,220 INFO: Closed all Matplotlib figures.
+2024-12-07 13:11:25,410 INFO: Closed MongoDB connection.
+2024-12-07 13:11:25,411 INFO: Closed all Matplotlib figures.
+2024-12-07 13:11:26,297 INFO: Connected to MongoDB successfully.
+2024-12-07 13:11:26,387 INFO: Closed MongoDB connection.
+2024-12-07 13:11:26,388 INFO: Closed all Matplotlib figures.
+2024-12-07 13:11:38,256 INFO: Connected to MongoDB successfully.
+2024-12-07 13:11:38,312 INFO: Closed MongoDB connection.
+2024-12-07 13:11:38,313 INFO: Closed all Matplotlib figures.
+2024-12-07 13:11:39,072 INFO: Connected to MongoDB successfully.
+2024-12-07 13:11:39,073 INFO: Connected to MongoDB successfully.
+2024-12-07 13:11:39,130 INFO: Closed MongoDB connection.
+2024-12-07 13:11:39,133 INFO: Closed all Matplotlib figures.
+2024-12-07 13:11:39,135 INFO: Closed MongoDB connection.
+2024-12-07 13:11:39,137 INFO: Closed all Matplotlib figures.
+2024-12-07 13:11:39,224 INFO: Connected to MongoDB successfully.
+2024-12-07 13:11:39,260 INFO: Closed MongoDB connection.
+2024-12-07 13:11:39,261 INFO: Closed all Matplotlib figures.
+2024-12-07 13:11:39,738 INFO: Connected to MongoDB successfully.
+2024-12-07 13:11:39,782 INFO: Closed MongoDB connection.
+2024-12-07 13:11:39,783 INFO: Closed all Matplotlib figures.
+2024-12-07 13:11:43,870 INFO: Connected to MongoDB successfully.
+2024-12-07 13:11:43,908 INFO: Closed MongoDB connection.
+2024-12-07 13:11:43,911 INFO: Closed all Matplotlib figures.
+2024-12-07 13:11:44,556 INFO: Connected to MongoDB successfully.
+2024-12-07 13:11:44,556 INFO: Connected to MongoDB successfully.
+2024-12-07 13:11:44,604 INFO: Closed MongoDB connection.
+2024-12-07 13:11:44,606 INFO: Closed all Matplotlib figures.
+2024-12-07 13:11:44,632 INFO: Closed MongoDB connection.
+2024-12-07 13:11:44,633 INFO: Closed all Matplotlib figures.
+2024-12-07 13:11:44,760 INFO: Connected to MongoDB successfully.
+2024-12-07 13:11:44,796 INFO: Closed MongoDB connection.
+2024-12-07 13:11:44,796 INFO: Closed all Matplotlib figures.
+2024-12-07 13:11:45,663 INFO: Connected to MongoDB successfully.
+2024-12-07 13:11:45,704 INFO: Closed MongoDB connection.
+2024-12-07 13:11:45,707 INFO: Closed all Matplotlib figures.
+2024-12-07 13:11:49,903 INFO: Connected to MongoDB successfully.
+2024-12-07 13:11:49,940 INFO: Closed MongoDB connection.
+2024-12-07 13:11:49,942 INFO: Closed all Matplotlib figures.
+2024-12-07 13:11:50,481 INFO: Connected to MongoDB successfully.
+2024-12-07 13:11:50,520 INFO: Closed MongoDB connection.
+2024-12-07 13:11:50,521 INFO: Closed all Matplotlib figures.
+2024-12-07 13:11:51,029 INFO: Connected to MongoDB successfully.
+2024-12-07 13:11:51,100 INFO: Closed MongoDB connection.
+2024-12-07 13:11:51,102 INFO: Closed all Matplotlib figures.
+2024-12-07 13:11:51,352 INFO: Connected to MongoDB successfully.
+2024-12-07 13:11:51,387 INFO: Closed MongoDB connection.
+2024-12-07 13:11:51,390 INFO: Closed all Matplotlib figures.
+2024-12-07 13:11:51,449 INFO: Connected to MongoDB successfully.
+2024-12-07 13:11:51,498 INFO: Closed MongoDB connection.
+2024-12-07 13:11:51,499 INFO: Closed all Matplotlib figures.
+2024-12-07 13:11:51,905 INFO: Connected to MongoDB successfully.
+2024-12-07 13:11:51,953 INFO: Closed MongoDB connection.
+2024-12-07 13:11:51,954 INFO: Closed all Matplotlib figures.
+2024-12-07 13:12:00,935 INFO: Connected to MongoDB successfully.
+2024-12-07 13:12:01,012 INFO: Closed MongoDB connection.
+2024-12-07 13:12:01,014 INFO: Closed all Matplotlib figures.
+2024-12-07 13:12:01,451 INFO: Connected to MongoDB successfully.
+2024-12-07 13:12:01,485 INFO: Closed MongoDB connection.
+2024-12-07 13:12:01,487 INFO: Closed all Matplotlib figures.
+2024-12-07 13:12:02,085 INFO: Connected to MongoDB successfully.
+2024-12-07 13:12:02,150 INFO: Closed MongoDB connection.
+2024-12-07 13:12:02,152 INFO: Closed all Matplotlib figures.
+2024-12-07 13:12:02,370 INFO: Connected to MongoDB successfully.
+2024-12-07 13:12:02,413 INFO: Closed MongoDB connection.
+2024-12-07 13:12:02,414 INFO: Closed all Matplotlib figures.
+2024-12-07 13:12:02,439 INFO: Connected to MongoDB successfully.
+2024-12-07 13:12:02,480 INFO: Closed MongoDB connection.
+2024-12-07 13:12:02,481 INFO: Closed all Matplotlib figures.
+2024-12-07 13:12:03,235 INFO: Connected to MongoDB successfully.
+2024-12-07 13:12:03,279 INFO: Closed MongoDB connection.
+2024-12-07 13:12:03,281 INFO: Closed all Matplotlib figures.
+2024-12-07 13:12:08,154 INFO: Connected to MongoDB successfully.
+2024-12-07 13:12:08,201 INFO: Closed MongoDB connection.
+2024-12-07 13:12:08,202 INFO: Closed all Matplotlib figures.
+2024-12-07 13:12:08,835 INFO: Connected to MongoDB successfully.
+2024-12-07 13:12:08,850 INFO: Connected to MongoDB successfully.
+2024-12-07 13:12:08,882 INFO: Closed MongoDB connection.
+2024-12-07 13:12:08,884 INFO: Closed all Matplotlib figures.
+2024-12-07 13:12:08,910 INFO: Closed MongoDB connection.
+2024-12-07 13:12:08,911 INFO: Closed all Matplotlib figures.
+2024-12-07 13:12:09,125 INFO: Connected to MongoDB successfully.
+2024-12-07 13:12:09,170 INFO: Closed MongoDB connection.
+2024-12-07 13:12:09,171 INFO: Closed all Matplotlib figures.
+2024-12-07 13:12:09,606 INFO: Connected to MongoDB successfully.
+2024-12-07 13:12:09,643 INFO: Closed MongoDB connection.
+2024-12-07 13:12:09,648 INFO: Closed all Matplotlib figures.
+2024-12-07 13:12:18,800 INFO: Connected to MongoDB successfully.
+2024-12-07 13:14:55,711 INFO: Base Directory: C:\INFORMATICA\TFG\Codigo-DEV-ENV\Python_Ai_Signal_Processing\ECG_Modeling\WebService\app
+2024-12-07 13:14:55,712 INFO: Templates Directory: C:\INFORMATICA\TFG\Codigo-DEV-ENV\Python_Ai_Signal_Processing\ECG_Modeling\WebService\app\../templates
+2024-12-07 13:14:55,713 INFO: Static Directory: C:\INFORMATICA\TFG\Codigo-DEV-ENV\Python_Ai_Signal_Processing\ECG_Modeling\WebService\app\../static
+2024-12-07 13:14:55,721 INFO: Flask application created and initialized.
+2024-12-07 13:15:01,497 INFO: Connected to MongoDB successfully.
+2024-12-07 13:15:01,689 INFO: Closed MongoDB connection.
+2024-12-07 13:15:01,691 INFO: Closed all Matplotlib figures.
+2024-12-07 13:15:06,588 INFO: Connected to MongoDB successfully.
+2024-12-07 13:15:06,648 INFO: Closed MongoDB connection.
+2024-12-07 13:15:06,649 INFO: Closed all Matplotlib figures.
+2024-12-07 13:15:07,501 INFO: Connected to MongoDB successfully.
+2024-12-07 13:15:07,501 INFO: Connected to MongoDB successfully.
+2024-12-07 13:15:07,506 INFO: Connected to MongoDB successfully.
+2024-12-07 13:15:07,599 INFO: Closed MongoDB connection.
+2024-12-07 13:15:07,600 INFO: Closed MongoDB connection.
+2024-12-07 13:15:07,600 INFO: Closed MongoDB connection.
+2024-12-07 13:15:07,601 INFO: Closed all Matplotlib figures.
+2024-12-07 13:15:07,602 INFO: Closed all Matplotlib figures.
+2024-12-07 13:15:07,603 INFO: Closed all Matplotlib figures.
+2024-12-07 13:15:08,121 INFO: Connected to MongoDB successfully.
+2024-12-07 13:15:08,154 INFO: Closed MongoDB connection.
+2024-12-07 13:15:08,155 INFO: Closed all Matplotlib figures.
+2024-12-07 13:15:13,273 INFO: Connected to MongoDB successfully.
+2024-12-07 13:15:13,335 INFO: Closed MongoDB connection.
+2024-12-07 13:15:13,337 INFO: Closed all Matplotlib figures.
+2024-12-07 13:15:13,926 INFO: Connected to MongoDB successfully.
+2024-12-07 13:15:13,971 INFO: Closed MongoDB connection.
+2024-12-07 13:15:13,972 INFO: Closed all Matplotlib figures.
+2024-12-07 13:15:14,614 INFO: Connected to MongoDB successfully.
+2024-12-07 13:15:14,661 INFO: Connected to MongoDB successfully.
+2024-12-07 13:15:14,675 INFO: Closed MongoDB connection.
+2024-12-07 13:15:14,676 INFO: Closed all Matplotlib figures.
+2024-12-07 13:15:14,689 INFO: Connected to MongoDB successfully.
+2024-12-07 13:15:14,730 INFO: Closed MongoDB connection.
+2024-12-07 13:15:14,732 INFO: Closed all Matplotlib figures.
+2024-12-07 13:15:14,744 INFO: Closed MongoDB connection.
+2024-12-07 13:15:14,745 INFO: Closed all Matplotlib figures.
+2024-12-07 13:15:15,261 INFO: Connected to MongoDB successfully.
+2024-12-07 13:15:15,304 INFO: Closed MongoDB connection.
+2024-12-07 13:15:15,306 INFO: Closed all Matplotlib figures.
+2024-12-07 13:18:55,472 INFO: Base Directory: C:\INFORMATICA\TFG\Codigo-DEV-ENV\Python_Ai_Signal_Processing\ECG_Modeling\WebService\app
+2024-12-07 13:18:55,473 INFO: Templates Directory: C:\INFORMATICA\TFG\Codigo-DEV-ENV\Python_Ai_Signal_Processing\ECG_Modeling\WebService\app\../templates
+2024-12-07 13:18:55,474 INFO: Static Directory: C:\INFORMATICA\TFG\Codigo-DEV-ENV\Python_Ai_Signal_Processing\ECG_Modeling\WebService\app\../static
+2024-12-07 13:18:55,479 INFO: Flask application created and initialized.
+2024-12-07 13:19:02,198 INFO: Connected to MongoDB successfully.
+2024-12-07 13:19:02,273 INFO: Closed MongoDB connection.
+2024-12-07 13:19:02,275 INFO: Closed all Matplotlib figures.
+2024-12-07 13:19:02,780 INFO: Connected to MongoDB successfully.
+2024-12-07 13:19:02,828 INFO: Closed MongoDB connection.
+2024-12-07 13:19:02,830 INFO: Closed all Matplotlib figures.
+2024-12-07 13:19:03,481 INFO: Connected to MongoDB successfully.
+2024-12-07 13:19:03,508 INFO: Connected to MongoDB successfully.
+2024-12-07 13:19:03,508 INFO: Connected to MongoDB successfully.
+2024-12-07 13:19:03,841 INFO: Closed MongoDB connection.
+2024-12-07 13:19:03,842 INFO: Closed all Matplotlib figures.
+2024-12-07 13:19:03,860 INFO: Closed MongoDB connection.
+2024-12-07 13:19:03,860 INFO: Closed all Matplotlib figures.
+2024-12-07 13:19:03,868 INFO: Closed MongoDB connection.
+2024-12-07 13:19:03,869 INFO: Closed all Matplotlib figures.
+2024-12-07 13:19:04,408 INFO: Connected to MongoDB successfully.
+2024-12-07 13:19:04,449 INFO: Closed MongoDB connection.
+2024-12-07 13:19:04,450 INFO: Closed all Matplotlib figures.
+2024-12-07 13:19:10,397 INFO: Connected to MongoDB successfully.
+2024-12-07 13:19:10,473 INFO: Closed MongoDB connection.
+2024-12-07 13:19:10,483 INFO: Closed all Matplotlib figures.
+2024-12-07 13:19:11,069 INFO: Connected to MongoDB successfully.
+2024-12-07 13:19:11,111 INFO: Closed MongoDB connection.
+2024-12-07 13:19:11,112 INFO: Closed all Matplotlib figures.
+2024-12-07 13:19:11,144 INFO: Connected to MongoDB successfully.
+2024-12-07 13:19:11,168 INFO: Connected to MongoDB successfully.
+2024-12-07 13:19:11,178 INFO: Closed MongoDB connection.
+2024-12-07 13:19:11,179 INFO: Closed all Matplotlib figures.
+2024-12-07 13:19:11,203 INFO: Closed MongoDB connection.
+2024-12-07 13:19:11,204 INFO: Closed all Matplotlib figures.
+2024-12-07 13:19:11,670 INFO: Connected to MongoDB successfully.
+2024-12-07 13:19:11,704 INFO: Closed MongoDB connection.
+2024-12-07 13:19:11,705 INFO: Closed all Matplotlib figures.
+2024-12-07 13:19:17,406 INFO: Connected to MongoDB successfully.
+2024-12-07 13:19:17,444 INFO: Closed MongoDB connection.
+2024-12-07 13:19:17,446 INFO: Closed all Matplotlib figures.
+2024-12-07 13:19:18,091 INFO: Connected to MongoDB successfully.
+2024-12-07 13:19:18,105 INFO: Connected to MongoDB successfully.
+2024-12-07 13:19:18,121 INFO: Closed MongoDB connection.
+2024-12-07 13:19:18,123 INFO: Closed all Matplotlib figures.
+2024-12-07 13:19:18,135 INFO: Connected to MongoDB successfully.
+2024-12-07 13:19:18,146 INFO: Closed MongoDB connection.
+2024-12-07 13:19:18,147 INFO: Closed all Matplotlib figures.
+2024-12-07 13:19:18,211 INFO: Closed MongoDB connection.
+2024-12-07 13:19:18,212 INFO: Closed all Matplotlib figures.
+2024-12-07 13:19:18,626 INFO: Connected to MongoDB successfully.
+2024-12-07 13:19:18,667 INFO: Closed MongoDB connection.
+2024-12-07 13:19:18,668 INFO: Closed all Matplotlib figures.
+2024-12-07 13:19:23,208 INFO: Connected to MongoDB successfully.
+2024-12-07 13:19:23,247 INFO: Closed MongoDB connection.
+2024-12-07 13:19:23,249 INFO: Closed all Matplotlib figures.
+2024-12-07 13:19:23,759 INFO: Connected to MongoDB successfully.
+2024-12-07 13:19:23,794 INFO: Closed MongoDB connection.
+2024-12-07 13:19:23,796 INFO: Closed all Matplotlib figures.
+2024-12-07 13:19:24,466 INFO: Connected to MongoDB successfully.
+2024-12-07 13:19:24,507 INFO: Closed MongoDB connection.
+2024-12-07 13:19:24,508 INFO: Closed all Matplotlib figures.
+2024-12-07 13:19:24,532 INFO: Connected to MongoDB successfully.
+2024-12-07 13:19:24,533 INFO: Connected to MongoDB successfully.
+2024-12-07 13:19:24,586 INFO: Closed MongoDB connection.
+2024-12-07 13:19:24,587 INFO: Closed MongoDB connection.
+2024-12-07 13:19:24,588 INFO: Closed all Matplotlib figures.
+2024-12-07 13:19:24,590 INFO: Closed all Matplotlib figures.
+2024-12-07 13:19:25,091 INFO: Connected to MongoDB successfully.
+2024-12-07 13:19:25,132 INFO: Closed MongoDB connection.
+2024-12-07 13:19:25,133 INFO: Closed all Matplotlib figures.
+2024-12-07 13:19:32,117 INFO: Connected to MongoDB successfully.
+2024-12-07 13:19:32,187 INFO: Closed MongoDB connection.
+2024-12-07 13:19:32,188 INFO: Closed all Matplotlib figures.
+2024-12-07 13:19:32,721 INFO: Connected to MongoDB successfully.
+2024-12-07 13:19:32,769 INFO: Closed MongoDB connection.
+2024-12-07 13:19:32,771 INFO: Closed all Matplotlib figures.
+2024-12-07 13:19:33,398 INFO: Connected to MongoDB successfully.
+2024-12-07 13:19:33,410 INFO: Connected to MongoDB successfully.
+2024-12-07 13:19:33,456 INFO: Closed MongoDB connection.
+2024-12-07 13:19:33,457 INFO: Closed all Matplotlib figures.
+2024-12-07 13:19:33,462 INFO: Closed MongoDB connection.
+2024-12-07 13:19:33,464 INFO: Closed all Matplotlib figures.
+2024-12-07 13:19:33,488 INFO: Connected to MongoDB successfully.
+2024-12-07 13:19:33,545 INFO: Closed MongoDB connection.
+2024-12-07 13:19:33,546 INFO: Closed all Matplotlib figures.
+2024-12-07 13:19:34,008 INFO: Connected to MongoDB successfully.
+2024-12-07 13:19:34,055 INFO: Closed MongoDB connection.
+2024-12-07 13:19:34,056 INFO: Closed all Matplotlib figures.
+2024-12-07 13:19:44,446 INFO: Connected to MongoDB successfully.
+2024-12-07 13:19:45,863 INFO: Closed MongoDB connection.
+2024-12-07 13:19:45,864 INFO: Closed all Matplotlib figures.
+2024-12-07 13:19:46,580 INFO: Connected to MongoDB successfully.
+2024-12-07 13:19:46,590 INFO: Connected to MongoDB successfully.
+2024-12-07 13:19:46,625 INFO: Connected to MongoDB successfully.
+2024-12-07 13:19:46,635 INFO: Closed MongoDB connection.
+2024-12-07 13:19:46,638 INFO: Closed all Matplotlib figures.
+2024-12-07 13:19:46,660 INFO: Closed MongoDB connection.
+2024-12-07 13:19:46,661 INFO: Closed all Matplotlib figures.
+2024-12-07 13:19:46,702 INFO: Closed MongoDB connection.
+2024-12-07 13:19:46,704 INFO: Closed all Matplotlib figures.
+2024-12-07 13:19:47,149 INFO: Connected to MongoDB successfully.
+2024-12-07 13:19:47,199 INFO: Closed MongoDB connection.
+2024-12-07 13:19:47,201 INFO: Closed all Matplotlib figures.

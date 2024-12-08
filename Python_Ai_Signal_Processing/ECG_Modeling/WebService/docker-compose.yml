@@ -1,0 +1,20 @@
+version: "3.9"
+
+services:
+  flask-app-tfg-dev:
+    image: tfg-dev-flask-app-tfg-dev:dev-1.0-working-7-12-2024
+    container_name: tfg-dev  # The name you want for the container
+    restart: always
+    ports:
+      - "5000:5000"
+    environment:
+      - DB_USERNAME=${DB_USERNAME}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_CLUSTER=${DB_CLUSTER}
+      - DB_NAME=${DB_NAME}
+    volumes:
+      - tfg-dev-data:/app/data
+
+volumes:
+  tfg-dev-data:
+    driver: local

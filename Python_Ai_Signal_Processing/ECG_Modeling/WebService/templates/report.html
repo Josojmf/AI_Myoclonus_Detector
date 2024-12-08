@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block title %}PDF Report Viewer - Signal Noise Detection{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='report_styles.css') }}">
+{% endblock %}
+
+{% block header %}PDF Report Viewer{% endblock %}
+
+{% block content %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.14.305/pdf.min.js"></script>
+<div class="report-page">
+    <h2 class="page-title">Memoria TFG José María Fernández</h2>
+    <p class="description">
+        En esta página puedes visualizar la memoria del Trabajo de Fin de Grado de José María Fernández en formato PDF.
+        Utiliza los botones de navegación para avanzar o retroceder entre las páginas del documento.
+    </p>
+
+    <!-- PDF Viewer Section -->
+    <div id="pdf-container">
+        <canvas id="pdf-render" style="border: 1px solid #ccc; width: 100%; max-width: 800px;"></canvas>
+        <div class="pdf-navigation">
+            <button id="prev-page">Previous</button>
+            <span id="page-info">Page <span id="current-page"></span> of <span id="total-pages"></span></span>
+            <button id="next-page">Next</button>
+        </div>
+    </div>
+
+    <!-- Hidden PDF URL for JavaScript -->
+    <input type="hidden" id="pdf-url" value="{{ url_for('static', filename='docs/AI-EMG-FilteringSpasticity-TFG-JMF.pdf') }}">
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/report_script.js') }}?v=2.0"></script>
+{% endblock %}

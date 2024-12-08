@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}Register DEV ENV{% endblock %}
+{% block content %}
+<div class="container">
+    <link rel="stylesheet" href="{{ url_for('static', filename='register_styles.css') }}">
+    <div class="form-container">
+        <h1>Create an Account</h1>
+        <form action="/register" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            <div class="checkbox-container">
+                <input type="checkbox" id="is_admin" name="is_admin">
+                <label for="is_admin">Register as Admin</label>
+            </div>
+
+            <button type="submit" class="btn">Register</button>
+        </form>
+        <p>Already have an account? <a href="/login">Login here</a>.</p>
+    </div>
+</div>
+{% endblock %}

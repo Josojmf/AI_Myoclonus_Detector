@@ -1,0 +1,101 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f7fa;
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #002147;
+    color: white;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+    flex: 1;
+    text-align: center;
+}
+
+/* Main Content */
+.main-content {
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    text-align: center;
+}
+
+.page-title {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #002147;
+    text-align: center;
+}
+
+.description {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* PDF Viewer */
+#pdf-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+canvas {
+    display: block;
+    margin: 10px auto;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* PDF Navigation */
+.pdf-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#prev-page,
+#next-page {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #002147;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#prev-page:hover,
+#next-page:hover {
+    background-color: #003366;
+}
+
+#page-info {
+    font-size: 16px;
+    font-weight: bold;
+}

@@ -1,0 +1,20 @@
+version: "3.9"
+
+services:
+  flask-app-tfg-int:
+    build: .
+    container_name: AI_Signal_Processing_TFG_Web-App_INT_ENV
+    restart: always
+    ports:
+      - "5005:5005"
+    environment:
+      - DB_USERNAME=${DB_USERNAME}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_CLUSTER=${DB_CLUSTER}
+      - DB_NAME=${DB_NAME}
+    volumes:
+      - tfg-int-data:/app/data
+
+volumes:
+  tfg-int-data:
+    driver: local
